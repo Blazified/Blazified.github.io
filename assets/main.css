@@ -1,0 +1,137 @@
+@import url('https://fonts.googleapis.com/css2?family=Lexend&display=swap');
+
+:root {
+	/* Colors */
+	--bg-color: #2e0d1c;
+	
+	--bg-color: #080b1e;
+	--text-color: #fefefe;
+	--accent-color-1: #f43a3a;
+	--accent-color-2: #fdd19b;
+}
+
+html {
+	/* Basic Globals */
+	background-color: var(--bg-color);
+	color: var(--text-color);
+	
+	font-family: 'Lexend', sans-serif;
+	font-weight: 400;
+}
+
+body {
+	margin: 0;
+}
+
+h1 {
+	font-weight: 900;
+	margin: auto;
+}
+
+p {
+	font-weight: 400;
+	font-size: 1rem;
+	margin: auto;
+}
+
+hr {
+	width: 90%;
+    border-width: 0.1rem;
+    border-style: solid;
+    border-radius: 0.1rem;
+}
+
+.gradient {
+	/* Gradient effect */
+    background-image: linear-gradient(45deg, var(--accent-color-1) 0%, var(--accent-color-2) 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.title {
+	font-size: max(5rem, 8vw);
+	display: block;
+    width: fit-content;
+	text-align: center;
+	
+	filter: drop-shadow(3px 3px 0.5px var(--text-color));
+	
+	/* Hover changes */
+	transition: ease-in-out 0.5s;
+	letter-spacing: 0.4rem;
+}
+
+.title:hover {
+	transform: scale(1.1) rotate(-3deg);
+	transition: ease-in-out 0.2s;
+	letter-spacing: max(0.5rem, 1vw);
+}
+
+.title_subtext {
+	width: fit-content;
+	text-align: center;
+	filter: drop-shadow(0px 0px 12px var(--accent-color-2));
+	
+	/* Hover changes */
+	transition: ease-in-out 0.5s;
+	letter-spacing: 0.2rem;
+}
+
+.title_subtext:hover {
+	transition: ease-in-out 0.2s;
+	transform: scale(1.1) rotate(2deg);
+	letter-spacing: 0.3rem;
+}
+
+.title_box {
+	padding-top: 3rem;
+	padding-bottom: 3rem;
+}
+
+
+.background_image {
+	background-image: url(art/banner.png);
+	background-size: cover;
+    background-position: center;
+	min-height: 100vh;
+}
+
+.color_accent_1 {
+	color: var(--accent-color-1)
+}
+
+.color_accent_2 {
+	color: var(--accent-color-2)
+}
+
+.bold {
+	font-weight: bold;
+}
+
+.center_flex {
+	display: flex;
+    flex-direction: column;
+    align-content: center;
+    justify-content: center;
+    align-items: center;
+	
+	text-align: center;
+}
+
+.text_box {
+	width: fit-content;
+	padding: 1rem;
+    background: #161040c0;
+    backdrop-filter: blur(3px);
+    border-radius: 1rem;
+	margin-bottom: 1rem;
+}
+
+.text_box > p {
+	margin-top: 0.2rem;
+	margin-bottom: 0.2rem;
+}
+
+.font_bit_bigger {
+	font-size: 1.2rem;
+}
