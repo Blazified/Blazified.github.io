@@ -5,6 +5,7 @@
 	--bg-color: #2e0d1c;
 	
 	--bg-color: #080b1e;
+	--mid-color: #4444ab;
 	--text-color: #fefefe;
 	--accent-color-1: #f43a3a;
 	--accent-color-2: #fdd19b;
@@ -44,7 +45,7 @@ hr {
 .gradient {
 	/* Gradient effect */
     background-image: linear-gradient(45deg, var(--accent-color-1) 0%, var(--accent-color-2) 100%);
-    -webkit-background-clip: text;
+	-webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
 }
 
@@ -108,9 +109,19 @@ hr {
 	font-weight: bold;
 }
 
-.center_flex {
+.flex_col {
 	display: flex;
     flex-direction: column;
+    align-content: center;
+    justify-content: center;
+    align-items: center;
+	
+	text-align: center;
+}
+
+.flex_row {
+	display: flex;
+    flex-direction: row;
     align-content: center;
     justify-content: center;
     align-items: center;
@@ -134,4 +145,50 @@ hr {
 
 .font_bit_bigger {
 	font-size: 1.2rem;
+}
+
+a.link_button {
+	text-decoration: none;
+}
+
+.link_button > div {
+	background-color: var(--mid-color);
+    padding: 4px;
+    border-radius: 50%;
+    width: 40px;
+    height: 40px;
+    mix-blend-mode: screen;
+
+	margin-left: 0.4rem;
+	margin-right: 0.4rem;
+
+	transition: ease-in-out 0.5s;
+	backdrop-filter: blur(3px);
+}
+
+.link_button > div:hover {
+	transition: ease-in-out 0.1s;
+	background-color: white;
+	transform: scale(1.1);
+}
+
+.link_button > div > i {
+	color: black;
+	font-size: 1.6rem;
+}
+
+.twitter_color {
+	color: #1d9bef
+}
+
+.discord_color {
+	color: #5865f2
+}
+
+.twitch_color {
+	color: #9147ff
+}
+
+.planet_minecraft_color {
+	color: #75c810
 }

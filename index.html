@@ -2,15 +2,19 @@
 <html>
 	<head>
 		<link rel="stylesheet" href="assets/main.css">
+		<!-- Font Awesome Free -->
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
 	</head>
 	<body>
-		<div class="background_image center_flex">
+		<div class="flex_col background_image">
+			<!-- Title -->
 			<div class="title_box">
 				<h1 class="gradient title">Blazified</h1>
 				<p class="title_subtext font_bit_bigger">Welcome to my site!</p>
 			</div>
 			
-			<div class="center_flex text_box">
+			<!-- About Me -->
+			<div class="flex_col text_box">
 				<h1>About Me</h1>
 				<hr>
 				<p class="font_bit_bigger">Hey I'm <span class="color_accent_1 bold">Kyle</span>!</p>
@@ -18,12 +22,41 @@
 				<p>I do game development, art, and modding on the side.</p>
 			</div>
 			
-			<div class="center_flex text_box">
+			<!-- Self Info -->
+			<div class="flex_col text_box">
 				<h1>Where To Find Me?</h1>
 				<hr>
-				<p>I have a Twitter, Discord, Twitch, and Minecraft Planet.</p>
-				<p>If you wanna talk business reach out on Twitter or Discord.</p>
+				<p>I have a 
+					<span class="twitter_color bold">Twitter</span>,
+					<span class="twitch_color bold">Twitch</span>, 
+					and 
+					<span class="planet_minecraft_color bold">Planet Minecraft</span>.
+				</p>
+				<p>If you wanna talk business reach out on <span class="twitter_color bold">Twitter</span>.</p>
 			</div>
+
+			<!-- Socials -->
+			<div class="flex_row">
+				<!-- Twitter Link -->
+				<a href="https://twitter.com/KyleJ_A29" class="link_button">
+					<div class="flex_col">
+						<i class="fa-brands fa-twitter"></i>
+					</div>
+				</a>
+				<!-- Twitch Link -->
+				<a href="https://www.twitch.tv/blazifiedlive" class="link_button">
+					<div class="flex_col">
+						<i class="fa-brands fa-twitch"></i>
+					</div>
+				</a>
+				<!-- Planet Minecraft Link -->
+				<a href="https://www.planetminecraft.com/member/blazified/" class="link_button">
+					<div class="flex_col">
+						<i class="fa-solid fa-earth-americas"></i>
+					</div>
+				</a>
+			</div>
+			
 		</div>
 	</body>
 </html>
