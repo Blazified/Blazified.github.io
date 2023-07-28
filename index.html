@@ -1,62 +1,96 @@
-<!DOCTYPE html>
-<html>
-	<head>
-		<link rel="stylesheet" href="assets/main.css">
-		<!-- Font Awesome Free -->
-		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
-	</head>
-	<body>
-		<div class="flex_col background_image">
-			<!-- Title -->
-			<div class="title_box">
-				<h1 class="gradient title">Blazified</h1>
-				<p class="title_subtext font_bit_bigger">Welcome to my site!</p>
-			</div>
-			
-			<!-- About Me -->
-			<div class="flex_col text_box">
-				<h1>About Me</h1>
-				<hr>
-				<p class="font_bit_bigger">Hey I'm <span class="color_accent_1 bold">Kyle</span>!</p>
-				<p>I'm a programmer from the UK, with a BSc in <span class="gradient bold">Computer Science</span>.</p>
-				<p>I do game development, art, and modding on the side.</p>
-			</div>
-			
-			<!-- Self Info -->
-			<div class="flex_col text_box">
-				<h1>Where To Find Me?</h1>
-				<hr>
-				<p>I have a 
-					<span class="twitter_color bold">Twitter</span>,
-					<span class="twitch_color bold">Twitch</span>, 
-					and 
-					<span class="planet_minecraft_color bold">Planet Minecraft</span>.
-				</p>
-				<p>If you wanna talk business reach out on <span class="twitter_color bold">Twitter</span>.</p>
-			</div>
+<!doctype html>
+<html lang="en">
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
 
-			<!-- Socials -->
-			<div class="flex_row">
-				<!-- Twitter Link -->
-				<a href="https://twitter.com/KyleJ_A29" class="link_button">
-					<div class="flex_col">
-						<i class="fa-brands fa-twitter"></i>
-					</div>
-				</a>
-				<!-- Twitch Link -->
-				<a href="https://www.twitch.tv/blazifiedlive" class="link_button">
-					<div class="flex_col">
-						<i class="fa-brands fa-twitch"></i>
-					</div>
-				</a>
-				<!-- Planet Minecraft Link -->
-				<a href="https://www.planetminecraft.com/member/blazified/" class="link_button">
-					<div class="flex_col">
-						<i class="fa-solid fa-earth-americas"></i>
-					</div>
-				</a>
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+
+    <!-- Font Awesome Free -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+
+    <!-- My Resources -->
+	<link rel="stylesheet" href="assets/main.css">
+    <link rel="icon" type="image/x-icon" href="assets/art/KJ Favicon.png">
+    
+    <!-- Preview Meta Tags -->
+    <title>Blazified</title>
+    <meta name="theme-color" content="#F43A3A">
+    <meta name="description" content="Hey I'm Blazified or Kyle! I'm a programmer that does vector and pixel art as well as modding games.">
+    <meta name="keywords" content="game dev, artist, modding, programmer">
+    <!-- Open Graph Meta Tags -->
+    <meta property="og:url" content="https://blazified.github.io/">
+    <!-- <meta property="og:type" content="website"> -->
+    <meta property="og:title" content="Blazified">
+    <meta property="og:description" content="Hey I'm Blazified or Kyle! I'm a programmer that does vector and pixel art as well as modding games.">
+    <meta property="og:image" content="https://blazified.github.io/assets/art/KJ%20Logo.png">
+</head>
+<body>
+	<div class="d-flex flex-column align-items-center justify-content-center background_image overflow-hidden">
+		<!-- Title -->
+		<div class="col-12 mb-3">
+			<h1 class="gradient title">Blazified</h1>
+			<p class="title_subtext font_bit_bigger">Welcome to my site!</p>
+		</div>
+			
+		<div class="main_size d-grid">
+			<!-- About Me -->
+			<div class="row mb-3">
+				<div class="col-md-9 d-flex flex-column align-items-center text-center text_box">
+					<h1>About Me</h1>
+					<hr>
+					<p class="font_bit_bigger">Hey I'm <span class="color_accent_1 bold">Kyle</span>!</p>
+					<p>I'm a programmer from the UK, with a BSc in <span class="gradient bold">Computer Science</span>.</p>
+					<p>I do game development, art, and modding on the side.</p>
+					
+				</div>
+				
+				<div class="col-3 d-none d-md-block">
+					<img class="w-100 h-100 obj_fit_cover" src="assets/art/KJ Logo.png" alt="A logo made of the letters K, J">
+				</div>
 			</div>
 			
+			<!-- Social Info -->
+			<div class="row justify-content-center">
+				<div class="col-md-8 mb-3 d-flex flex-column align-items-center text-center text_box">
+					<h1>Where To Find Me?</h1>
+					<hr>
+					<p>I have a 
+						<span class="twitter_color bold">Twitter</span>,
+						<span class="twitch_color bold">Twitch</span>, 
+						and 
+						<span class="planet_minecraft_color bold">Planet Minecraft</span>.
+					</p>
+					<p>If you wanna talk business reach out on <span class="twitter_color bold">Twitter</span>.</p>				
+				</div>
+			</div>
 		</div>
-	</body>
+			
+		<!-- Socials -->
+		<div class="flex_row">
+			<!-- Twitter Link -->
+			<a href="https://twitter.com/KyleJ_A29" class="link_button">
+				<div class="flex_col">
+					<i class="fa-brands fa-twitter"></i>
+				</div>
+			</a>
+			<!-- Twitch Link -->
+			<a href="https://www.twitch.tv/blazifiedlive" class="link_button">
+				<div class="flex_col">
+					<i class="fa-brands fa-twitch"></i>
+				</div>
+			</a>
+			<!-- Planet Minecraft Link -->
+			<a href="https://www.planetminecraft.com/member/blazified/" class="link_button">
+				<div class="flex_col">
+					<i class="fa-solid fa-earth-americas"></i>
+				</div>
+			</a>
+		</div>
+		
+	</div>
+</body>
 </html>

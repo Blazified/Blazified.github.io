@@ -11,17 +11,22 @@
 	--accent-color-2: #fdd19b;
 }
 
-html {
+body {
 	/* Basic Globals */
 	background-color: var(--bg-color);
 	color: var(--text-color);
 	
 	font-family: 'Lexend', sans-serif;
 	font-weight: 400;
+	margin: 0;
 }
 
-body {
-	margin: 0;
+hr {
+	opacity: 100;
+}
+
+img {
+	border-radius: 1rem;
 }
 
 h1 {
@@ -50,7 +55,7 @@ hr {
 }
 
 .title {
-	font-size: max(5rem, 8vw);
+	font-size: max(4rem, 8vw);
 	display: block;
     width: fit-content;
 	text-align: center;
@@ -130,12 +135,10 @@ hr {
 }
 
 .text_box {
-	width: fit-content;
 	padding: 1rem;
     background: #161040c0;
     backdrop-filter: blur(3px);
     border-radius: 1rem;
-	margin-bottom: 1rem;
 }
 
 .text_box > p {
@@ -153,10 +156,9 @@ a.link_button {
 
 .link_button > div {
 	background-color: var(--mid-color);
-    padding: 4px;
     border-radius: 50%;
-    width: 40px;
-    height: 40px;
+    width: 48px;
+    height: 48px;
     mix-blend-mode: screen;
 
 	margin-left: 0.4rem;
@@ -191,4 +193,23 @@ a.link_button {
 
 .planet_minecraft_color {
 	color: #75c810
+}
+
+.obj_fit_cover {
+	object-fit: cover;
+}
+
+.justify_items_center {
+	justify-items: center;
+}
+
+.main_size {
+	width: 896px;
+}
+
+@media (max-width: 896px)
+{
+	.main_size {
+		width: 100%;
+	}
 }
